@@ -1,0 +1,15 @@
+{
+  "name": "raja-mantri-game",
+  "version": "1.0.0",
+  "description": "Multiplayer Raja, Mantri, Chor, Sipahi game",
+  "scripts": {
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
